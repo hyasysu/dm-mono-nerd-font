@@ -6,7 +6,7 @@ if ! command -v fontforge &> /dev/null; then
     exit 1
 fi
 
-# Try use the latest version
+# Try to use the latest version
 git submodule init
 git submodule update --recursive --remote --depth 1
 git submodule foreach --recursive '
